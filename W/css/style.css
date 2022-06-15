@@ -20,12 +20,13 @@ body {
 #menu {
   width: 100px;
   height: 100px;
-  padding-left: 100px;
+  justify-self: end;
 }
 
 /*this is the main body css*/
 #page_content {
   display: grid;
+  place-items: center;
 }
 
 #Title {
@@ -42,12 +43,11 @@ body {
 
 #burn {
   background-color: crimson;
-  margin-left: 50px;
-  margin-right: 50px;
-  place-items: center;
+  margin-top: 50px;
   width: 200px;
   height: 250px;
-  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #page_foot {
@@ -59,4 +59,15 @@ body {
 
 #closing {
   font-size: small;
+}
+
+@media screen and (min-width: 800px) {
+  #page_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #Title {
+    place-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
